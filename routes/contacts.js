@@ -62,7 +62,7 @@ router.post('/add', requireAuth, (req, res, next) => {
      let newContact = buscontact({
         "Name": req.body.name,
         "Number": req.body.number,
-        "Email": req.body.Email
+        "Email": req.body.email
 
     });
 
@@ -136,7 +136,7 @@ router.get('/delete/:id', requireAuth, (req, res, next) => {
 
     let id = req.params.id;
 
-    book.remove({_id: id}, (err) =>{
+    buscontact.remove({_id: id}, (err) =>{
         if(err){
             console.log(err);
             res.end(err);

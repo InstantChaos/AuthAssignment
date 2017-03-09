@@ -35,6 +35,15 @@ label{
     color: white;
 }
 
+th{
+    color: white;
+}
+
+td{
+    background-color: grey;
+    color: white;
+}
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
