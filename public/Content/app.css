@@ -1,0 +1,43 @@
+/*
+  Filename: app.css
+  Author: Franco Chong
+  Website Name: Franco's Portfolio
+  Description: The css for the website
+*/
+
+/* Custom CSS goes here */
+body { 
+    padding-bottom: 70px;
+    background-image: url("/Assets/images/space2.jpg"); 
+}
+
+a{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+label{
+    color: white;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+

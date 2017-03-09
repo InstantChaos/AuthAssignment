@@ -1,0 +1,70 @@
+<!--
+  Filename: header.ejs
+  Author: Franco Chong
+  Website Name: Franco's Portfolio
+  Description: Contains the header and navbar of the website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/Scripts/lib/font-awesome/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/Content/app.css' />
+    <link rel='stylesheet' href='/Assets/images/space2.jpg'/>
+
+    <!--scripts to run the carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default-bg-primary" style="background-color:blue" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><i class="fa fa-arrows-alt"></i> Franco Chong</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <% if(title == "Home") { %>
+          <li class="active"><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <% } else { %>
+          <li><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <% } %>
+        <% if(title == "About") { %>
+         <li class="active"><a href="/about"><i class="fa fa-id-card-o fa-lg"></i> About</a></li>
+        <% } else { %>
+          <li><a href="/about"><i class="fa fa-id-card-o fa-lg"></i> About</a></li>
+        <% } %>
+        <% if(title == "Projects") { %>
+          <li class="active"><a href="/projects"><i class="fa fa-folder-open-o fa-lg"></i> Projects</a></li>
+        <% } else { %>
+          <li><a href="/projects"><i class="fa fa-folder-open-o fa-lg"></i> Projects</a></li>
+        <% } %>
+        <% if(title == "Services") { %>
+          <li class="active"><a href="/services"><i class="fa fa-map fa-lg"></i> Services</a></li>
+        <% } else { %>
+          <li><a href="/services"><i class="fa fa-map fa-lg"></i> Services</a></li>
+        <% } %>
+        <% if(title == "Contact") { %>
+          <li class="active"><a href="/contact"><i class="fa fa-envelope-o fa-lg"></i> Contact</a></li>
+        <% } else { %>
+          <li><a href="/contact"><i class="fa fa-envelope-o fa-lg"></i> Contact</a></li>
+        <% } %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>

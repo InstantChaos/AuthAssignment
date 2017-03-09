@@ -1,0 +1,39 @@
+<!--
+  Filename: contact.ejs
+  Author: Franco Chong
+  Website Name: Franco's Portfolio
+  Description: The template for the contact page
+-->
+
+<% include ../partials/header.ejs %>
+
+  <!--Main section-->
+  <div class="container">
+    <h1>
+      <u>Contact me</u>
+    </h1>
+    <br>
+    <label>Email: francochong93@gmail.com</label>
+    <br>
+    <label>Phone: 416-568-8792</label>
+    <hr>
+    <!--setting up the form-->
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <br><br>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" cols="70" placeholder="Comment"></textarea>
+      </div>
+      <br><br>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+
+  <% include ../partials/footer.ejs %>
